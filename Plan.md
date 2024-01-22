@@ -15,10 +15,35 @@ S2D部分数据构建相对要求低，主要挑战在于***采集足够数量�
 最后对LLAMA-2-Chat进行模型微调。
 ![S2D](./figs/S2D.png)
 #### 3.1 Description2Guidance (D2G)
-该部分数据构建相对困难，当前Description可能没有深度信息，在构建Guidance时，可能先用人工撰写的触觉表述构建demonstrations，再基于GPT-3.5/4大量生成（耗时长），最后可能还需要过滤。
+该部分数据构建相对困难，主要挑战在于***Guidance需要保证质量***。当前Description可能没有深度信息，在构建Guidance时，可能先用人工撰写的触觉表述构建demonstrations，再基于GPT-3.5/4大量生成（耗时长），最后可能还需要过滤。
 ![D2G](./figs/D2G.png)
 ### 5. Schedule-排期
-| Week | Date      | Plan                                  | Person   |
-|------|-----------|---------------------------------------|----------|
-| 1    | 0128-0202 | 1. 采集Structures <br/> 2. 开源获取Captions | 1. Jason |
-| 2    | 0204-0209 | 采集Structures                          | Jason    |
+初步的时间线如下所示：
+![Timeline](./figs/Timeline.png)
+具体的时间分配暂定如下：
+
+| Week | Date      | Person | ToDo |
+|------|-----------|--------|------|
+| 1    | 0128-0202 | Yi     | 1. 收集Structures-1k条<br/>2.基于GPT-4, Human Annotation生成高质量 S2D Demonstrations-100条<br/>3. 搭建本地LLaMA-2-Chat模型，微调S2D模块|
+|      |           | Jason  | 1. 收集Structures-2k条<br/>2.基于GPT-4, Human Annotation生成高质量 S2D Demonstrations-100条<br/>3. 搭建本地LLaMA-2模型或基于GPT-3.5-API访问，数据增广至3k条 |
+|      |           | Zhenyu | 1. 收集Structures-2k条<br/>2.基于GPT-4, Human Annotation生成高质量 S2D Demonstrations-100条<br/>3. 基于GPT-3.5-API访问，数据增广至2k条|
+| 2    | 0205-0209 | Yi     | 1.基于GPT-4, Human Annotation生成高质量<br/>D2G Demonstrations-100条 <br/>2. 基于GPT-3.5-API访问，数据增广至2k条|
+|      |           | Jason  | 1.基于GPT-4, Human Annotation生成高质量<br/>D2G Demonstrations-100条<br/>2. 基于GPT-3.5-API访问，数据增广至2k条<br/>3.搭建本地LLaMA-2-Chat模型|
+|      |           | Zhenyu | 1.基于GPT-4, Human Annotation生成高质量 D2G Demonstrations-100条<br/>2. 基于GPT-3.5-API访问，数据增广至2k条|
+| 3    | 0219-0223 | Yi     | 1. D2G 样本大规模扩充|
+|      |           | Jason  | 1. D2G 样本大规模扩充|
+|      |           | Zhenyu | 1. D2G样本大规模扩充|
+| 4    | 0226-0301 | Yi     | 1. D2G 样本大规模扩充|
+|      |           | Jason  | 1. D2G 样本大规模扩充|
+|      |           | Zhenyu | 1. D2G样本大规模扩充|
+| 5    | 0304-0308 | Y/J/Z  | To be filled|
+| 6    | 0311-0315 | Y/J/Z  | To be filled|
+| 7    | 0318-0322 | Y/J/Z  | To be filled|
+| 8    | 0325-0329 | Y/J/Z  | To be filled|
+| 9    | 0401-0405 | Y/J/Z  | To be filled|
+| 10   | 0408-0412 | Y/J/Z  | To be filled|
+
+
+
+
+
