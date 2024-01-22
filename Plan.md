@@ -16,10 +16,7 @@ S2D部分数据构建相对要求低，主要挑战在于***采集足够数量�
 ![S2D](./figs/S2D.png)
 #### 3.1 Description2Guidance (D2G)
 该部分数据构建相对困难，当前Description可能没有深度信息，在构建Guidance时，可能先用人工撰写的触觉表述构建demonstrations，再基于GPT-3.5/4大量生成（耗时长），最后可能还需要过滤。
-### 4 Model-模型开发
-#### 4.1 Structure2Description (S2D)
-#### 4.2 Description2Guidance (D2G)
-
+![D2G](./figs/D2G.png)
 ### 5. Schedule-排期
 | Week | Date      | Plan                                  | Person   |
 |------|-----------|---------------------------------------|----------|
