@@ -7,10 +7,12 @@
 从硬件资源、数据资源，模型以及算法，应用场景的分层角度出发，整个Pipeline的Framework如下图所示：
 ![Framework](./figs/Framework.png)
 现有资源包括Hardware, LLM(开源或API)，需在此基础上搭建数据、算法以及应用模块。
-### 3. Data-数据构建
-与CV与NLP独立的pipeline设计相适配，同时构建纯text模态也更方便获取大规模的数据，在数据构建这一子任务中，有两类数据需要构建，目标是构建1k~10k量级。
-#### 3.1 Strcuture2Description (S2D)
-该部分数据构建相对要求低，主要挑战在于***采集足够数量的Structures***。
+
+需要注意的是，由于LLM具备多任务的能力，同时为了在硬件资源受限的情况下启动系统，S2D，D2G两个模块最后是***在一个模型上***实现，通过不同的instruction prompt获得结果，暂定Base模型为***LLaMA-2-Chat***.
+### 3 Strcuture2Description (S2D)
+S2D部分数据构建相对要求低，主要挑战在于***采集足够数量的Structures***。
+当获取足量Structures之后，基于GPT或本地LLM大量扩展获取Descriptions。
+最后对LLAMA-2-Chat进行模型微调。
 ![S2D](./figs/S2D.png)
 #### 3.1 Description2Guidance (D2G)
 该部分数据构建相对困难，当前Description可能没有深度信息，在构建Guidance时，可能先用人工撰写的触觉表述构建demonstrations，再基于GPT-3.5/4大量生成（耗时长），最后可能还需要过滤。
