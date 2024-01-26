@@ -20,7 +20,7 @@ S2D部分数据构建相对要求低，主要挑战在于***采集足够数量�
 ### 5. Schedule-排期
 初步的时间线如下所示：
 ![Timeline](./figs/Timeline.png)
-具体的时间分配暂定如下：
+具体的时间分配暂定如下---V1-有修改（见Structure2Description.md文件）：
 
 | Week | Date      | Person | ToDo |
 |------|-----------|--------|------|
