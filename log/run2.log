@@ -1,0 +1,26 @@
+D:\Softwares\Anaconda\python.exe D:\Structure2Guidance\camera_input\run_gpt_api_offline.py
+banana_grap_2024-01-31-14_52_33
+SCENE DESCRIPTION:  In this scene, towards your left at around 8 o'clock direction, there is a laptop. Moving slightly to the right, at around 2 o'clock direction, there is a bottle. Continuing towards the right, at around 4 o'clock direction, you'll find a clock. Lastly, towards the far right at around 11 o'clock direction, there is a banana. It seems like a hand has touched the laptop.
+
+GUIDANCE:  You have successfully touched the laptop. The target object, the banana, is located towards the far right at around 11 o'clock direction. To reach the banana, move your hand gradually towards your right without crossing the clock and the bottle. Continue until you feel the elongated shape and smooth texture of the banana.
+
+SCENE DESCRIPTION:  In the scene, a laptop is positioned towards the right side. A sink is located towards the left side, slightly above the laptop. A TV is on the right side near the laptop. On the left side, closer to the front, there is a bottle. Two bananas are present, one towards the far right and the other closer to the front left. It seems like a hand is touching the banana that is closer to the front left corner.
+
+GUIDANCE:  Move your hand slightly to the right to locate the banana that is closer to the front left corner. As you already have your hand on the banana, try to grasp it to complete the task.
+
+SCENE DESCRIPTION:  In this scene:
+- A bottle is located towards the left side, closer to the front.
+- There is a banana positioned on the right side, slightly above the bottle.
+- A TV is in front of the viewer, occupying a large area.
+- Another banana is situated on the right side, close to the TV.
+- A cup is positioned slightly towards the right side, below the first banana.
+- A sink is on the left side, behind the bottle and cup.
+- A laptop is also in front, sharing the space with the TV.
+
+Additionally, it seems like a person's hand has touched the cup, which is slightly to the right of the first banana.
+
+GUIDANCE:  As your hand has already touched the cup, which is slightly to the right of the first banana, further move your hand upwards and towards the right to reach the target object, which is a banana. The banana is positioned on the right side, slightly above the bottle. Proceed to navigate your hand in that direction to locate the banana.
+
+SCENE DESCRIPTION:  In the scene, there is a laptop positioned on the left side from your initial location. Moving towards the right from the laptop, there is a bottle slightly towards your front at around the 3 o'clock direction. Additionally, a person's hand has touched a banana located towards the right from the person.
+
+GUIDANCE:  You have already touched the target object, the banana. Task completed.
