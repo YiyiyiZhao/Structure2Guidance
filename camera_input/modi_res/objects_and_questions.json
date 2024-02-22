@@ -1,0 +1,8 @@
+{'idx': 0, 'object': 'laptop', 'coordinate': ((0, 295), (612, 710))}
+{'idx': 1, 'object': 'banana', 'coordinate': ((960, 276), (1078, 436))}
+{'idx': 2, 'object': 'bottle', 'coordinate': ((320, 172), (418, 321))}
+{'idx': 3, 'object': 'clock', 'coordinate': ((629, 173), (689, 237))}
+{'question index': 0, 'question': 'How should the hand move to obtain the banana?', 'options': {'A': 'toward the top left', 'B': 'toward the bottom right', 'C': 'toward the top right', 'D': 'down'}, 'answer': 'C'}
+{'question index': 1, 'question': 'How should the hand move to obtain the laptop?', 'options': {'A': 'left', 'B': 'right', 'C': 'up', 'D': 'down'}, 'answer': 'A'}
+{'question index': 2, 'question': 'What is the position of the bottle relative to the clock?', 'options': {'A': 'on the left', 'B': 'below', 'C': 'on the right', 'D': 'above'}, 'answer': 'A'}
+{'question index': 3, 'question': 'What direction should the hand move to reach the clock?', 'options': {'A': 'up', 'B': 'right', 'C': 'down', 'D': 'left'}, 'answer': 'B'}

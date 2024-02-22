@@ -3,7 +3,7 @@ import openai
 import time
 from utils.file_pro import *
 #openai setting
-with open('./resources/api_key.txt', 'r') as f:
+with open('../resources/api_key.txt', 'r') as f:
     openai.api_key = f.read()
 parameters = {
     'engine': 'gpt-3.5-turbo',
@@ -30,7 +30,7 @@ Demo output: [{"question index": 0, "question": 'How should the hand move to obt
 #mark="banana_grap"
 mark_list=['broccoli_grab','carrot_grab','orange_grab','pizza_appear']
 for mark in mark_list:
-    data_dir='./data'
+    data_dir= '../data'
     jf_list=get_json_files(data_dir)
     mark_json_file=get_mark_json_file(mark, jf_list)
     data=load_json_file(mark_json_file)
