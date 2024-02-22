@@ -96,3 +96,20 @@ def display_string(text_show):
     root.mainloop()
 
 
+
+aaa="""
+    Image Captioning Task requirements: Given the image, your task is to generate a scene description suitable for visually impaired individuals.
+    Input: Image and a specific object 
+    Output requirements: 
+    1. Your output need to included the specific object, which could be found in the image.
+    2. you need to describe some main objects in the image, and remember to describe with spatial information like 'in front,' 'left,' 'right,' and try to be as accurate as possible. you may use clock directions (e.g., 3 o'clock direction, 9 o'clock direction, etc.) if needed. 
+    3. Ensure clarity and spatial understanding for the target users. 
+    2. You can provide additional descriptions, such as the relative position of one object to another (e.g., above, to the right), allowing visually impaired individuals to create a complete 3D spatial representation in their minds. 
+    3. Only return the pure descriptive text; ensure it's of an appropriate length, no length than 200 words .
+    4. Please write your output into a file called 'output.txt' so that I can download it directly.
+    
+    The specific object Please return the scene description.
+
+"""
+
+
